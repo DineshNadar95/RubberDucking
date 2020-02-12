@@ -1,0 +1,34 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -100px;
+  }
+  
+  .push {
+    height: 100px;
+  }
+
+.header {
+    padding: 0.5px;
+    text-align: center;
+    background: #ceff99;
+    color: black;
+    /* height:100%; */
+  }
+
+  .header h1 {
+    font-size: 40px;
+  }
+
+  .footer {
+    
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }

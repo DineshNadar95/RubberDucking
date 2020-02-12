@@ -1,0 +1,124 @@
+ <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<h1>{{title}}</h1>
+<main>
+    <ul class="people_list">
+
+        {{!-- <li>{{this.options}}</li> --}}
+
+        <form action="/quiz" method="POST" >
+            <input type ="hidden" name="randq" value = "{{randq}}"/>
+            
+            
+            <li>{{result.[0].question}}</li>
+           <input type="radio"  id="zero" name="zero" value="{{result.[0].options.[0]}}" />
+            <label id="zero" name="zero" for="zero">{{result.[0].options.[0]}}</label><br>
+            <input type="radio"  id="zero" name="zero" value="{{result.[0].options.[1]}}" />
+            <label id="zero" name="zero" for="zero">{{result.[0].options.[1]}}</label><br>
+            <input type="radio"  id="zero" name="zero" value="{{result.[0].options.[2]}}" />
+            <label id="zero" name="zero" for="zero">{{result.[0].options.[2]}}</label><br>
+            <input type="radio"  id="zero" name="zero" value="{{result.[0].options.[3]}}" />
+            <label id="zero" name="zero" for="zero">{{result.[0].options.[3]}}</label><br>
+            <br/><br/>
+            <li>{{result.[1].question}}</li>
+            <input type="radio"  id="one" name="one" value="{{result.[1].options.[0]}}" />
+            <label id="one" name="one" for="one">{{result.[1].options.[0]}}</label><br>
+            <input type="radio"  id="one" name="one" value="{{result.[1].options.[1]}}" />
+            <label id="one" name="one" for="one">{{result.[1].options.[1]}}</label><br>
+            <input type="radio"  id="one" name="one" value="{{result.[1].options.[2]}}" />
+            <label id="one" name="one" for="one">{{result.[1].options.[2]}}</label><br>
+            <input type="radio"  id="one" name="one" value="{{result.[1].options.[3]}}" />
+            <label id="one" name="one" for="one">{{result.[1].options.[3]}}</label><br>
+            <br/><br/>
+            <li>{{result.[2].question}}</li>
+            <input type="radio"  id="two" name="two" value="{{result.[2].options.[0]}}" />
+            <label id="two" name="two" for="two">{{result.[2].options.[0]}}</label><br>
+            <input type="radio"  id="two" name="two" value="{{result.[2].options.[1]}}" />
+            <label id="two" name="two" for="two">{{result.[2].options.[1]}}</label><br>
+            <input type="radio"  id="two" name="two" value="{{result.[2].options.[2]}}" />
+            <label id="two" name="two" for="two">{{result.[2].options.[2]}}</label><br>
+            <input type="radio"  id="two" name="two" value="{{result.[2].options.[3]}}" />
+            <label id="two" name="two" for="two">{{result.[2].options.[3]}}</label><br>
+            <br/><br/>
+            <li>{{result.[3].question}}</li>
+            <input type="radio"  id="three" name="three" value="{{result.[3].options.[0]}}" />
+            <label id="three" name="three" for="three">{{result.[3].options.[0]}}</label><br>
+            <input type="radio"  id="three" name="three" value="{{result.[3].options.[1]}}" />
+            <label id="three" name="three" for="three">{{result.[3].options.[1]}}</label><br>
+            <input type="radio"  id="three" name="three" value="{{result.[3].options.[2]}}" />
+            <label id="three" name="three" for="three">{{result.[3].options.[2]}}</label><br>
+            <input type="radio"  id="three" name="three" value="{{result.[3].options.[3]}}" />
+            <label id="three" name="three" for="three">{{result.[3].options.[3]}}</label><br>
+            <br/><br/>
+            <li>{{result.[4].question}}</li>
+            <input type="radio"  id="four" name="four" value="{{result.[4].options.[0]}}" />
+            <label id="four" name="four" for="four">{{result.[4].options.[0]}}</label><br>
+            <input type="radio"  id="four" name="four" value="{{result.[4].options.[1]}}" />
+            <label id="four" name="four" for="four">{{result.[4].options.[1]}}</label><br>
+            <input type="radio"  id="four" name="four" value="{{result.[4].options.[2]}}" />
+            <label id="four" name="four" for="four">{{result.[4].options.[2]}}</label><br>
+            <input type="radio"  id="four" name="four" value="{{result.[4].options.[3]}}" />
+            <label id="four" name="four" for="four">{{result.[4].options.[3]}}</label><br>
+            <br/><br/>
+            <li>{{result.[5].question}}</li>
+            <input type="radio"  id="five" name="five" value="{{result.[5].options.[0]}}" />
+            <label id="five" name="five" for="five">{{result.[5].options.[0]}}</label><br>
+            <input type="radio"  id="five" name="five" value="{{result.[5].options.[1]}}" />
+            <label id="five" name="five" for="five">{{result.[5].options.[1]}}</label><br>
+            <input type="radio"  id="five" name="five" value="{{result.[5].options.[2]}}" />
+            <label id="five" name="five" for="five">{{result.[5].options.[2]}}</label><br>
+            <input type="radio"  id="five" name="five" value="{{result.[5].options.[3]}}" />
+            <label id="five" name="five" for="five">{{result.[5].options.[3]}}</label><br>
+            <br/><br/>
+            <li>{{result.[6].question}}</li>
+           <input type="radio"  id="six" name="six" value="{{result.[6].options.[0]}}" />
+            <label id="six" name="six" for="six">{{result.[6].options.[0]}}</label><br>
+            <input type="radio"  id="six" name="six" value="{{result.[6].options.[1]}}" />
+            <label id="six" name="six" for="six">{{result.[6].options.[1]}}</label><br>
+            <input type="radio"  id="six" name="six" value="{{result.[6].options.[2]}}" />
+            <label id="six" name="six" for="six">{{result.[6].options.[2]}}</label><br>
+            <input type="radio"  id="six" name="six" value="{{result.[6].options.[3]}}" />
+            <label id="six" name="six" for="six">{{result.[6].options.[3]}}</label><br>
+            <br/><br/>
+            <li>{{result.[7].question}}</li>
+            <input type="radio"  id="seven" name="seven" value="{{result.[7].options.[0]}}" />
+            <label id="seven" name="seven" for="seven">{{result.[7].options.[0]}}</label><br>
+            <input type="radio"  id="seven" name="seven" value="{{result.[7].options.[1]}}" />
+            <label id="seven" name="seven" for="seven">{{result.[7].options.[1]}}</label><br>
+            <input type="radio"  id="seven" name="seven" value="{{result.[7].options.[2]}}" />
+            <label id="seven" name="seven" for="seven">{{result.[7].options.[2]}}</label><br>
+            <input type="radio"  id="seven" name="seven" value="{{result.[7].options.[3]}}" />
+            <label id="seven" name="seven" for="seven">{{result.[7].options.[3]}}</label><br>
+            <br/><br/>
+            <li>{{result.[8].question}}</li>
+            <input type="radio"  id="eight" name="eight" value="{{result.[8].options.[0]}}" />
+            <label id="eight" name="eight" for="eight">{{result.[8].options.[0]}}</label><br>
+            <input type="radio"  id="eight" name="eight" value="{{result.[8].options.[1]}}" />
+            <label id="eight" name="eight" for="eight">{{result.[8].options.[1]}}</label><br>
+            <input type="radio"  id="eight" name="eight" value="{{result.[8].options.[2]}}" />
+            <label id="eight" name="eight" for="eight">{{result.[8].options.[2]}}</label><br>
+            <input type="radio"  id="eight" name="eight" value="{{result.[8].options.[3]}}" />
+            <label id="eight" name="eight" for="eight">{{result.[8].options.[3]}}</label><br>
+            <br/><br/>
+            <li>{{result.[9].question}}</li>
+            <input type="radio"  id="nine" name="nine" value="{{result.[9].options.[0]}}" />
+            <label id="nine" name="nine" for="nine">{{result.[9].options.[0]}}</label><br>
+            <input type="radio"  id="nine" name="nine" value="{{result.[9].options.[1]}}" />
+            <label id="nine" name="nine" for="nine">{{result.[9].options.[1]}}</label><br>
+            <input type="radio"  id="nine" name="nine" value="{{result.[9].options.[2]}}" />
+            <label id="nine" name="nine" for="nine">{{result.[9].options.[2]}}</label><br>
+            <input type="radio"  id="nine" name="nine" value="{{result.[9].options.[3]}}" />
+            <label id="nine" name="nine" for="nine">{{result.[9].options.[3]}}</label><br>
+
+            
+            <br/><br/>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    
+
+
+    </ul>
+</main>

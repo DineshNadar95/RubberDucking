@@ -1,0 +1,109 @@
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email],input[type=number] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+     outline: none;
+    }
+
+    hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    }
+    
+    /* Add padding to container elements */
+    .signupform-container {
+     padding: 16px;
+     position: relative;
+    }
+
+    /* Add button format */
+    button {
+    background-color: darkgreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+    }
+
+    button:hover {
+    opacity:1;
+    }
+   
+    /* logo */
+    #logo {
+    position: relative;
+    }
+    #logo {
+    position: absolute;
+    top: -60px;
+    right: -30px;
+ 
+    }
+
+
+    /*search bar*/
+.navbar .search-container {
+    float: right;
+  }
+  
+  .navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .navbar .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar .search-container {
+      float: none;
+    }
+    .navbar a, .navbar input[type=text], .navbar .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .navbar input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+
+   /* Add button format */
+    #norm {
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    opacity: 0.9;
+    }

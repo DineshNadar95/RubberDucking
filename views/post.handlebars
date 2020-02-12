@@ -1,0 +1,52 @@
+<head>
+     <link rel="stylesheet" href="../public/user_profile.css"> 
+  <link rel="stylesheet" href="../public/edit_user.css">
+</head>
+<div class="navbar">
+    <a href="/home">HOME</a>
+    <a href="/profile">PROFILE</a>
+    <a href="/editUser">EDIT PROFILE</a>
+    <a href='/post'>POST</a>
+    <a href="/logout">LOGOUT</a>
+    <form action="/searchresult" method="POST" class="right">
+        <label for="sd" class="right"> <a href="#">SEARCH</a> </label>
+        <input type="text" name="sd" id="sd" placeholder="Search by name" />
+        <button type="submit" name="submit" id="norm">SEARCH</button>
+    </form>
+</div>
+<div class="main">
+    <h2> PREVIOUS POSTS: </h2>
+    {{!-- <h5>Title description, Dec 7, 2017</h5> --}}
+    <div>
+        {{#if value}}
+        {{error}}
+        {{/if}}
+    </div>
+
+    <ul>
+        {{#each posts}}
+        <li>
+            <a href="/post/{{this._id}}" />{{this.title}}</a>
+        </li>
+
+        {{/each}}
+    </ul>
+</div>
+
+
+<form action="/post/add" method="POST">
+    <div class="signupform-container">
+        <h2>ADD POST!</h2>
+        <hr>
+        <br>
+        <label for="pTitle"><b>TITLE</b></label><br>
+        <input type="text" placeholder="Your Post Title" name="pTitle" id="pTitle" required="">
+
+        <br>
+        <label for="pContent"><b>CONTENT </b></label><br>
+        <input type="text" placeholder="Your Post Content" name="pContent" id="pContent" required="">
+
+        <button type="submit" class="Add-Post">ADD POST</button><br>
+
+    </div>
+</form>

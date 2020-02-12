@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5df5b5217729b3285c2bc190"},"title":"Web Development","author":{"posterID":"5df5b4c66d376346884ecb40","name":"manoj"},"content":"It is everywhere now","comments":[]}
+{"_id":{"$oid":"5df5b5d37729b3285c2bc191"},"title":"Python","author":{"posterID":"5df5b4c66d376346884ecb40","name":"manoj"},"content":"Its a great Language","comments":[]}
+{"_id":{"$oid":"5df5b6657729b3285c2bc192"},"title":"Machine Learning ","author":{"posterID":"5df5b4ca6d376346884ecb41","name":"john"},"content":"Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.","comments":[]}

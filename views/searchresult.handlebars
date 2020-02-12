@@ -1,0 +1,37 @@
+<head>
+    <link rel="stylesheet" href="../public/user_profile.css">
+    <link rel="stylesheet" href="../public/home.css">
+</head>
+<div class="navbar">
+    <a href="/home">HOME</a>
+    <a href="/profile">PROFILE</a>
+    <a href="/editUser">EDIT PROFILE</a>
+    <a href='/post'>POST</a>
+     <a href="/logout">LOGOUT</a>
+    <form action="/searchresult" method="POST" class="right">
+    <label for="sd" class="right">  <a href="#">SEARCH</a> </label>
+    <input type="text" name="sd" id="sd"/>
+    <button type="submit" name="submit" class="right" >SEARCH</button>
+  </form>
+</div>
+
+
+<main>
+    <section>
+        {{#if value}}
+        <div>
+        <ul>
+            <h2>SEARCH RESULT FOR {{personName}}</h2>
+            {{#each result}}
+            <li>
+                <a href="/other_profile/{{_id}}" />{{firstName}} {{lastName}}</a>
+            </li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p>We're sorry, but no results were found for {{personName}}.</p>
+        </div>
+        {{/if}}
+        
+    </section>
+</main>

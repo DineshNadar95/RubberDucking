@@ -1,0 +1,21 @@
+{
+  "name": "project-folder",
+  "version": "1.0.0",
+  "description": "a social media website project, that allows technology enthusiasts to connect",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Prathamesh, Aishwarya, Dinesh, Saumya, Sanket",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "handlebars": "^4.5.3",
+    "mongodb": "^3.3.5",
+    "node-uuid": "^1.4.8"
+  }
+}

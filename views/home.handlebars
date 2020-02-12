@@ -1,0 +1,90 @@
+<head>
+    <link rel="stylesheet" href="../public/home.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .wrapper {
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+            background:cornsilk
+        }
+
+        .h_iframe {
+            position: relative;
+        }
+
+        .h_iframe .ratio {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .h_iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<div class="navbar">
+    <a href="#">HOME</a>
+    <a href="/profile">PROFILE</a>
+    <a href="/editUser">EDIT PROFILE</a>
+    <a href='/post'>POST</a>
+    <a href="/logout">LOGOUT</a>
+    {{!-- <form action="/searchresult" method="POST" class="right"> SEARCH BY <input placeholder="search here..." class="right" type="text"
+            id="searchbox">
+    </form> --}}
+    <form action="/searchresult" method="POST" class="right">
+        <label for="sd" class="right"> <a href="#">SEARCH</a> </label>
+        <input type="text" name="sd" id="sd" />
+        <button type="submit" name="submit" class="right">Search</button>
+    </form>
+
+</div>
+
+<div class="row">
+    <div class="side">
+        <h2>ABOUT ME</h2>
+        <h3>PROFILE PICTURE</h3>
+        <div class="fakeimg" style="height:200px;"> <img src="{{userFound.avatar}}" alt="profile image" /></div>
+        <p style="justify-content:center;">
+            <h3>USERNAME:</h3>{{userFound.uName}}
+        </p>
+        <h3>NAME:</h3>
+        <p>{{userFound.firstName}} {{userFound.lastName}}</p>
+        <p>
+            <h3>KNOWN LANGUAGES:</h3>{{userFound.superpowers}}
+        </p>
+        <div class="fakeimg" style="height:60px;">
+            <h3>YOUR SCORE : </h3> {{userFound.score}}
+        </div><br>
+
+    </div>
+</div>
+
+
+
+</div>
+<div class="main">
+    <div class="wrapper" id="wrap">
+       <div>  <h2>POSTS:</h2></div>
+        <div class="h_iframe">
+           
+            <iframe src="http://www.sanwebcorner.com" frameborder="0" allowfullscreen></iframe>
+        </div>
+        {{#each posts}}
+        <h3>TITLE : {{this.title}} </h3>
+        <h3>POST :</h3><p>{{this.content}}</p>
+        <h4>AUTHOR : {{this.author.name}}</h4>
+        <hr>
+        {{/each}}
+    </div>
+</div>
+</div>

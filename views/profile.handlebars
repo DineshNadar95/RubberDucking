@@ -1,0 +1,26 @@
+<head>
+    <link rel="stylesheet" href="../public/user_profile.css">
+</head>
+<div class="navbar">
+    <a href="/home">HOME</a>
+    <a href="/profile">PROFILE</a>
+    <a href="/editUser">EDIT PROFILE</a>
+    <a href='/post'>POST</a>
+     <a href="/logout">LOGOUT</a>
+    <form action="/searchresult" method="POST" class="right">
+    <label for="sd" class="right">  <a href="#">SEARCH</a> </label>
+    <input type="text" name="sd" id="sd" />
+    <button type="submit" name="submit" class="right">SEARCH</button>
+  </form>
+</div>
+<h2 style="text-align:center">USER PROFILE CARD OF {{userFound.firstName}} {{userFound.lastName}}</h2>
+
+<div class="card">
+    <img src="{{userFound.avatar}}" alt="John" style="width:100%">
+    <h1>{{userFound.uName}}</h1>
+    <p class="super_powers">{{userFound.superpowers}}</p>
+    <p class="email">{{userFound.emailID}}</p>
+    <p class="Score">{{userFound.score}}</p>
+
+
+</div>

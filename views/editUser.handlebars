@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" href="../public/edit_user.css">
+</head>
+
+<script src="" async defer></script>
+<form action="/editUser" method="post">
+    <div class="signupform-container">
+        {{#if error}}
+        {{error}}
+        {{/if}}
+        <h1>EDIT YOUR DETAILS !</h1>
+        <hr>
+
+    
+        {{!-- <br>
+        <label for="score"><b>Your Score </b></label><br>
+        <input type="number" placeholder="{{Your score}}" name="score" required> --}}
+
+        <br>
+        <label for="first-name"><b>FIRST NAME </b></label><br>
+        <input type="text" value={{userFound.firstName}} name="firstName" id="first-name" required="">
+
+        <br>
+        <label for="last-name"><b>LAST NAME </b></label><br>
+        <input type="text" value="{{userFound.lastName}}" name="lastName" id="last-name" required="">
+
+        <br>
+        <label for="email"><b>EMAIL </b></label><br>
+        <input type="email" value="{{userFound.emailID}}" name="email" id="email" required="">
+
+        
+        <br>
+        <label for="superpowers"><b>CODING LANGUAGES </b></label><br>
+        <input type="text" value="{{userFound.superpowers}}" name="superpowers" id="superpowers" required="">
+        <br>
+        <button type="submit" class="update-changes">UPDATE CHANGES</button><br>
+        <a href="/profile"><button type="submit" class="update-changes">DISCARD CHANGES</button><br></a>
+
+    </div>
+</form>

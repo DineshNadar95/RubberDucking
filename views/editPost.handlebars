@@ -1,0 +1,27 @@
+
+<head>
+    <title>edit post</title>
+    <link rel="stylesheet" href="../public/edit_user.css">
+</head>
+
+<form action="/editPost" method="POST">
+    <div class="signupform-container">
+        {{#if error}}
+        {{error}}
+        {{/if}}
+        <h1>Edit your Post!</h1>
+        <hr>
+
+        <br>
+        <label for="title"><b>Title</b></label><br>
+        <input type="text" value="{{singlePostData.title}}" name="title" id="title" required="">
+
+        <br>
+        <label for="content"><b>Content </b></label><br>
+        <input type="text" value="{{singlePostData.content}}" name="content" id="content" required="">
+
+        <button type="submit" class="update-changes">Update Changes</button><br>
+        <form action="/profile" method="POST"><button type="submit" class="update-changes">Discard Changes</button><br></form>
+
+</div>
+</form>

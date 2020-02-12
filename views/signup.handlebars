@@ -1,0 +1,179 @@
+<head>
+    <link rel="stylesheet" href="../public/signup.css">
+</head>
+<script src="" async defer></script>
+<form class="signupform-container" action="/signup" method="POST">
+    <div>
+        <h1>Its a go ! Sign up to go rubberDucking !</h1>
+        <p>Fill in the details to create your account</p>
+        <hr>
+
+        <br>
+        <label for="score"><b>Your Score is </b>{{Score}}</label><br>
+        <input type="hidden" name="score" value="{{Score}}">
+
+        <br>
+        <label for="firstName"><b>First Name </b></label><br>
+        <input type="text" placeholder="Enter your first name" name="firstName" required>
+
+        <br>
+        <label for="lastName"><b>Last Name </b></label><br>
+        <input type="text" placeholder="Enter your last name" name="lastName" required>
+
+        <br>
+        <label for="email"><b>Email </b></label><br>
+        <input type="email" placeholder="Enter your email" name="email" required>
+
+        <br>
+        <label for="username"><b>User Name </b></label><br>
+        <input type="text" placeholder="Enter your username" name="username" required>
+
+        {{!-- <br>
+        <label for="super-powers"><b>Super Powers </b></label><br>
+        <input type="text" placeholder="Enter your favourite programming language" name="super-powers" required> --}}
+
+        <br>
+        <label for="password"><b>Password </b></label><br>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <br>
+        <label for="superpowers"><b>Coding Languages </b></label><br>
+        <input type="text" placeholder="Your Powers" name="superpowers" required>
+
+        {{!-- <br>
+        <label for="repeat-password"><b>Repeat Password </b></label><br>
+        <input type="password" placeholder="Repeat Password" name="repeat-password" required> --}}
+
+        {{!-- Avatar Selection --}}
+
+        <div class="">
+            <h1>Select your favourite avatar here !</h1>
+            <p>Go rubberDucking !!! </p>
+            <hr>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-1.png" checked>
+                <img src="../public/png/user-1.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-2.png">
+                <img src="../public/png/user-2.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-3.png">
+                <img src="../public/png/user-3.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-4.png">
+                <img src="../public/png/user-4.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-5.png">
+                <img src="../public/png/user-5.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-6.png">
+                <img src="../public/png/user-6.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-7.png">
+                <img src="../public/png/user-7.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-8.png">
+                <img src="../public/png/user-8.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-9.png">
+                <img src="../public/png/user-9.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-10.png">
+                <img src="../public/png/user-10.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-11.png">
+                <img src="../public/png/user-11.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-12.png">
+                <img src="../public/png/user-12.png" style="width:100px;height:100px;">
+            </label>
+            <label>
+                <input type="radio" name="test" value="../public/png/user-13.png">
+                <img src="../public/png/user-13.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-14.png">
+                <img src="../public/png/user-14.png" style="width:100px;height:100px;">
+            </label>
+            <label>
+                <input type="radio" name="test" value="../public/png/user-15.png">
+                <img src="../public/png/user-15.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-16.png">
+                <img src="../public/png/user-16.png" style="width:100px;height:100px;">
+            </label>
+            <label>
+                <input type="radio" name="test" value="../public/png/user-17.png">
+                <img src="../public/png/user-17.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-18.png">
+                <img src="../public/png/user-18.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-19.png">
+                <img src="../public/png/user-19.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-20.png">
+                <img src="../public/png/user-20.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-21.png">
+                <img src="../public/png/user-21.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-22.png">
+                <img src="../public/png/user-22.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-23.png">
+                <img src="../public/png/user-23.png" style="width:100px;height:100px;">
+            </label>
+
+            <label>
+                <input type="radio" name="test" value="../public/png/user-24.png">
+                <img src="../public/png/user-24.png" style="width:100px;height:100px;">
+            </label>
+
+           
+        </div>
+
+        <br>
+        <button type="submit" class="signup-button">Sign Up</button>
+        <br>
+
+    </div>
+</form>

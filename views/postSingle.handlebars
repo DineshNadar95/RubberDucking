@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="../public/user_profile.css">
+    <link rel="stylesheet" href="../public/edit_user.css">
+</head>
+<div class="navbar">
+    <a href="/home">HOME</a>
+    <a href="/profile">PROFILE</a>
+    <a href="/editUser">EDIT PROFILE</a>
+    <a href='/post'>POST</a>
+    <a href="/logout">LOGOUT</a>
+    <form action="/searchresult" method="POST" class="right">
+    <label for="sd" class="right"> <a href="#">SEARCH</a> </label>
+    <input type="text" name="sd" id="sd" />
+    <button type="submit" name="submit" class="right">Search</button>
+  </form>
+</div>
+<div>
+  {{#if value}}
+  {{error}}
+  {{/if}}
+</div>
+<input type="hidden" name="post" value="{{post}}">
+<h2>Title</h2>
+<h3>{{post.title}}</h3>
+<h2>Content</h2>
+<h3>{{post.content}}</h3>
+<br>
+<a href="/postSingle/edit"><button type="submit" >Edit</button></a>
+<a href="/postSingle/remove"><button type="submit" >Remove</button></a>
